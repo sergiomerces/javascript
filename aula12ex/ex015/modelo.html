@@ -4,18 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Verificador e Idade</title>
     <link rel="stylesheet" href="estilo.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Verificador de Idade</h1>
     </header>
     <section>
         <div>
-            Testando...
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>
+                Sexo: 
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p><input type="button" value="verificar" onclick="verificar()"></p>
         </div>
-        <div></div>
+        <div id="res">
+            Preencha os dados para ver o resultado!
+        </div>
     </section>
     <footer>&copy; SCMTech</footer>
     <script src="script.js"></script>
