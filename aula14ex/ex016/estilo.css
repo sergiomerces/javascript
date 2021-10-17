@@ -17,8 +17,21 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.507);
 }
 
+input {
+    font: normal 15pt Arial;
+}
+
+input#btn {
+    font-weight: bold;
+}
+
+p#contar {
+    text-align: right;
+}
+
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+    margin-top: 15px;
 }
