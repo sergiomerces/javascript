@@ -5,7 +5,7 @@ function contar() {
     let res = document.querySelector('div#res');
 
     if(inicio.value.length === 0 || fim.value.length === 0 || passos.value.length === 0) {
-        window.alert('[ERRO] Verifique os dados digitados, nenhum campo deve ficar vazio.]');
+        window.alert('[ERRO] Verifique os dados digitados, nenhum campo deve ficar vazio.');
         res.innerHTML = 'Impossível contar...';
     } else {
         let i = Number(inicio.value);
@@ -13,12 +13,12 @@ function contar() {
         let p = Number(passos.value);
 
         if (p <= 0) {
-            window.alert('Passo inválido! Considerand PASSO 1.');
+            window.alert('Passo inválido! Considerando PASSO 1.');
 
             p = 1;
         }
         
-        res.innerHTML = 'Contando: '
+        res.innerHTML = 'Contando: ';
 
         if (i < f) {
             for(i; i <= f; i += p) {
