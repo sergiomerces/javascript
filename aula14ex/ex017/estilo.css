@@ -27,6 +27,10 @@ input#btn {
     font-weight: bold;
 }
 
+select {
+    font: normal 15pt Arial;
+}
+
 footer {
     color: white;
     text-align: center;
