@@ -17,8 +17,19 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.507);
 }
 
+input#num {
+    font: normal 15pt Arial;
+    width: 150px;
+}
+
+input#btn {
+    font: normal 15pt Arial;
+    font-weight: bold;
+}
+
 footer {
     color: white;
     text-align: center;
     font-style: italic;
+    margin-top: 15px;
 }
