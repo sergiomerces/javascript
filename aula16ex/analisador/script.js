@@ -1,22 +1,28 @@
-var lista = [];
+let num = document.querySelector('input#fnum');
+let caixa = document.querySelector('select#flista');
+let res = document.querySelector('div#res');
+let valores = [];
+
+function isNumero(n) {
+    if (Number(n) > 0 && Number(n) < 101) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+function inLista(n, l) {
+    if (l.indexOf(Number(n)) !== -1) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
 function adicionar() {
-    let entrada = document.querySelector('input#txtnum');
-    let caixa = document.querySelector('select#txtsel');
-
-    if (entrada.value.length === 0) {
-        window.alert('Por favor insira os dados!');
+    if (isNumero(num.value) && !inLista(num.value, valores)) {
+        window.alert('Tudo OK até aqui!');
     } else {
-        
-        if (entrada.value < 0 || entrada.value > 100) {
-            window.alert('Digite um número válido somente entre 0 e 100!');
-        } else {
-            entrada = Number(entrada.value);
-            lista.push(entrada);
-
-            let item = document.createElement('option');
-            item.text = `valor ${lista[0]} adicionado`;
-            caixa.appendChild(item);
-        }
+        window.alert('Valor inválido ou já encontrado na lista');
     }
 }

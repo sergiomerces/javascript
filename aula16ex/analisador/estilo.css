@@ -17,7 +17,7 @@ section {
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.507);
 }
 
-input#txtnum {
+input#fnum {
     font: normal 15pt Arial;
     width: 100px;
 }
@@ -27,7 +27,7 @@ input.button {
     font-weight: bold;
 }
 
-select#txtsel {
+select#flista {
     width: 200px;
     font: normal 14pt Arial;
 }
