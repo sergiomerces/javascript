@@ -21,8 +21,15 @@ function inLista(n, l) {
 
 function adicionar() {
     if (isNumero(num.value) && !inLista(num.value, valores)) {
-        window.alert('Tudo OK até aqui!');
+        valores.push(Number(num.value));
+
+        let item = document.createElement('option');
+
+        item.text = `valor ${num.value} adicionado`;
+        caixa.appendChild(item);
     } else {
-        window.alert('Valor inválido ou já encontrado na lista');
+        window.alert('Valor inválido ou já encontrado na lista!');
     }
+    num.value = null;
+    num.focus();
 }
